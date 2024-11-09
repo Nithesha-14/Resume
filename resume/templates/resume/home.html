@@ -1,0 +1,269 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bujuti Nithesha Reddy's Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        .intro {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e88e5;
+            color: #ffffff;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .intro h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .intro p {
+            font-size: 20px;
+            margin: 5px 0 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info p {
+            margin: 5px;
+            font-size: 18px;
+            color: #555;
+        }
+        .contact-info a {
+            color: #1e88e5;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .profile-links {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .profile-links a {
+            color: #ffffff;
+            background-color: #1e88e5;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 20px;
+            margin: 0 10px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .profile-links a:hover {
+            background-color: #1565c0;
+        }
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .section h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .section ul, .section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+        .section ul li a {
+            color: #1e88e5;
+            text-decoration: none;
+        }
+        .section ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Color updates for different sections */
+        .skills-section {
+            background-color: #e1bee7;
+        }
+        .skills-section h2 {
+            color: #7b1fa2;
+        }
+
+        .education-section {
+            background-color: #ffccbc;
+        }
+        .education-section h2 {
+            color: #d32f2f;
+        }
+
+        .certifications-section {
+            background-color: #b3e5fc;
+        }
+        .certifications-section h2 {
+            color: #0288d1;
+        }
+
+        .projects-section {
+            background-color: #c8e6c9;
+        }
+        .projects-section h2 {
+            color: #388e3c;
+        }
+
+        .languages-section {
+            background-color: #fff9c4;
+        }
+        .languages-section h2 {
+            color: #fbc02d;
+        }
+
+        .hobbies-section {
+            background-color: #f0f4c3;
+        }
+        .hobbies-section h2 {
+            color: #8bc34a;
+        }
+
+        /* Footer Section */
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #0288d1;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Intro Section -->
+        <div class="intro">
+            <h1>HELLO, I'M BUJUTI NITHESHA</h1>
+            <p>A second-year BTech student from the AIDS Department, passionate about technology and data science.</p>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p>Email: <a href="mailto:bujutinithesha@gmail.com">bujutinithesha@gmail.com</a></p>
+            <p>Phone: (+91) 7989896334</p>
+            <p>Location: Hyderabad</p>
+        </div>
+
+        <!-- Profile Links -->
+        <div class="profile-links">
+            <a href="https://www.codechef.com/users/nithesha49" target="_blank">Codechef</a>
+            <a href="https://github.com/Nithesha-14" target="_blank">GitHub</a>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section skills-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, C, Java, Django</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Data Science, AI, Machine Learning</li>
+                <li>Problem-solving, Critical-thinking, Communication</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section education-section">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="date">2023 - Present</div>
+                    <div class="details"><strong>BTech</strong> - Koneru Lakshmaiah University (2023-2027)</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2021 - 2023</div>
+                    <div class="details"><strong>Intermediate</strong> - Ratnam Jr. College</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">2021</div>
+                    <div class="details"><strong>10th Class</strong> - Sri Sai Vejitha School</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section certifications-section">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>Eduskills AWS Cloud Practitioner</strong> - Completed the AWS Cloud Practitioner certification.</li>
+                <li><strong>AWS Cloud Foundations</strong> - Successfully completed the AWS Cloud Foundations course.</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section projects-section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong><a href="https://github.com/Nithesha-14/personal-portfolio" target="_blank">Personal Portfolio Website</a></strong> - Developed a responsive personal website using Django.</li>
+                <li><strong><a href="https://github.com/Nithesha-14/data-analysis" target="_blank">Data Analysis Project</a></strong> - Conducted data analysis using Python and Pandas.</li>
+            </ul>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="section languages-section">
+            <h2>Languages Known</h2>
+            <ul>
+                <li>Telugu</li>
+                <li>Hindi</li>
+                <li>English</li>
+            </ul>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="section hobbies-section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading books</li>
+                <li>Interested in mythology</li>
+                <li>Singing and watching series</li>
+                <li>Building small programming projects</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Developed by Bujuti Nithesha Reddy | <a href="/download_resume.pdf" target="_blank">Download Resume</a></p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
